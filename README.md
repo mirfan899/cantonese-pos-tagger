@@ -9,7 +9,7 @@ from nltk import word_tokenize
 import nltk
 
 stanford_model = 'stanford-postagger/models/cantonese.tagger'
-stanford_jar = 'stanford-postagger/stanford-postagger.jar'
+stanford_jar = 'stanford-postagger/stanford-postagger-3.9.1.jar'
 tagger = StanfordPOSTagger(stanford_model, stanford_jar)
 tagger.java_options = '-mx4096m'
 text = "some chinese segmented words"
